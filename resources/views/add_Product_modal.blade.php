@@ -29,7 +29,7 @@
           </div>
           <div class="modal-body">
             <div class="mb-2 errMsgContainer">
-              <h5>Error msg here</h5>
+              <!-- <h5>Error msg here</h5> -->
             </div>
             <div class="mb-2">
               <label>Product Name</label>
@@ -46,7 +46,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Save Product</button>
+            <button type="button" class="btn btn-primary saveProduct">Save Product</button>
           </div>
         </div>
       </div>
