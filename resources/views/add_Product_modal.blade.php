@@ -16,7 +16,7 @@
 
 <body>
   <!-- Modal -->
-  <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="addModalProduct" aria-hidden="true">
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="addModalProduct" aria-hidden="true">
     <form action="" method="post" id="addProductForm">
       @csrf
       <div class="modal-dialog" role="document">

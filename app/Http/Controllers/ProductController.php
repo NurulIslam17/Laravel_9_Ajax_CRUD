@@ -31,13 +31,15 @@ class ProductController extends Controller
             ]
 
         );
-        // $data =  new Product();
+        $data =  new Product();
 
-        // $data->Name = $request->pName;
-        // $data->price = $request->pPrice;
-        // $data->desc = $request->pDesc;
-        // $data->save();
-        // return redirect()->back();
+        $data->Name = $request->name;
+        $data->price = $request->price;
+        $data->desc = $request->desc;
+        $data->save();
+        return response()->json([
+            'status'=>'successfull'
+        ]);
     }
     
 }

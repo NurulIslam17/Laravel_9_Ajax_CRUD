@@ -28,12 +28,15 @@
                     desc: desc
                 },
                 success: function(res) {
-
+                    if (res.status == 'successfull') {
+                        // $('#productModal').modal('hide');
+                        $('#addProductForm')[0].reset();
+                    }
                 },
                 error: function(err) {
                     let error = err.responseJSON;
-                    $.each(error.errors,function(index,value){
-                        $('.errMsgContainer').append('<span class="text-danger">'+value+'</span>'+'<br>');
+                    $.each(error.errors, function(index, value) {
+                        $('.errMsgContainer').append('<span class="text-danger">' + value + '</span>' + '<br>');
                     });
                 }
 
