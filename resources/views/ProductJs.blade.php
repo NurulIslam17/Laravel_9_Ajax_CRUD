@@ -12,6 +12,6 @@
     </script>
     <script>
         $(document).ready(function(){
-            alert('Checking Product JS');
+            // alert('Checking Product JS');
         });
     </script>

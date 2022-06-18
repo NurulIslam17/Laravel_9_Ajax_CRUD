@@ -44,7 +44,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h3 class="my-3 text-center">Laravel 9 Ajax CRUD</h3>
-
+                <a href="" class="btn btn-success" data-toggle="modal" data-target="#productModal">Add Product</a>
                 <div class="table-data">
                     <table class="table table-bordered">
                         <thead>
@@ -86,6 +86,7 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    @include('add_Product_modal')
     @include('ProductJs')
 </body>
 
