@@ -10,7 +10,8 @@ class ProductController extends Controller
     //product Home
     public function productHome()
     {
-        return view('productHome');
+        $product = Product::latest()->paginate(10);
+        return view('productHome',compact('product'));
     }
 
     //addProduct

@@ -10,8 +10,10 @@
         }
     });
 </script>
+
 <script>
     $(document).ready(function() {
+        
         $(document).on('click', '.saveProduct', function(e) {
             e.preventDefault();
             let name = $('#pName').val();
@@ -31,6 +33,7 @@
                     if (res.status == 'successfull') {
                         // $('#productModal').modal('hide');
                         $('#addProductForm')[0].reset();
+                     $('.table').load(location.href+' .table');
                     }
                 },
                 error: function(err) {

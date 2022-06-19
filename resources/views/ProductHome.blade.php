@@ -57,28 +57,22 @@
                             </tr>
                         </thead>
                         <tbody>
+
+                            @foreach($product as $key=>$prod)
                             <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>{{$key+1}}</td>
+                                <td>{{$prod->Name}}</td>
+                                <td>{{$prod->price}}</td>
+                                <td>{{$prod->desc}}</td>
                                 <td class="text-center">
                                     <a href="" class="btn btn-success"><i class="lar la-edit"></i></a>
                                     <a href="" class="btn btn-danger"><i class="las la-times"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td class="text-center">
-                                    <a href="" class="btn btn-success"><i class="lar la-edit"></i></a>
-                                    <a href="" class="btn btn-danger"><i class="las la-times"></i></a>
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
+                    {!! $product->links()!!}
                 </div>
             </div>
         </div>
